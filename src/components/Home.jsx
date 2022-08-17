@@ -1,11 +1,11 @@
 import React from "react";
 import { HiArrowRight } from "react-icons/hi";
 import Typed from "react-typed";
-import Profile from "../assets/profile.png";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f]">
+    <div name="home" className="w-full h-screen">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-pink-600 text-2xl"> Hi, my name is </p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
@@ -28,21 +28,24 @@ const Home = () => {
         <p className="text-[#8892b0] py-4 max-w-[700px]">
           I'm a Product and/or Data Analyst. I specialize in analyzing, cleaning
           and generating insights with Data and also automating business
-          processes. Currently i'm focused on building and working on products
-          with real-life applications.
+          processes. Currently, i'm focused on building and working on products
+          with real-life mobile applications with{" "}
+          <span className="text-pink-600">React-Native</span>
         </p>
         <div>
           <button
             className="text-white group border-2 px-6 py-3 my-2 flex items-center rounded-md hover:bg-pink-600
                 hover:border-pink-600 ease-in-out duration-300"
           >
-            View Portfolio
+            <Link to="portfolio" smooth={true} duration={500}>
+              View Portfolio
+            </Link>
+
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowRight className="ml-3" />
             </span>
           </button>
         </div>
-       
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const NavBar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 border-b-2 border-gray-500">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300 border-b-2 border-gray-500">
       <div>
         <img src={Logo} alt="Logo" style={{ width: "50px" }} />
       </div>
@@ -33,6 +33,12 @@ const NavBar = () => {
           {" "}
           <Link to="about" smooth={true} duration={500}>
             About
+          </Link>
+        </li>
+        <li className="hover:bg-pink-600 rounded">
+          {" "}
+          <Link to="education" smooth={true} duration={500}>
+            Education
           </Link>
         </li>
         <li className="hover:bg-pink-600 rounded">
@@ -58,6 +64,7 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Menu*/}
+
       <ul
         className={
           !nav
@@ -82,6 +89,18 @@ const NavBar = () => {
             About
           </Link>
         </li>
+
+        <li className="py-6 text-4xl ">
+          <Link
+            onClick={handleClick}
+            to="education"
+            smooth={true}
+            duration={500}
+          >
+            Education
+          </Link>
+        </li>
+
         <li className="py-6 text-4xl ">
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
@@ -107,7 +126,7 @@ const NavBar = () => {
       {/* Social Icons*/}
       <div className="hidden md:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] duration-300 bg-blue-600 ">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px]  opacity-60 lg:opacity-100 hover:opacity-100 duration-300 bg-blue-600 ">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.linkedin.com/in/ogunnusi-tolulope/"
@@ -117,34 +136,34 @@ const NavBar = () => {
               LinkedIn <FaLinkedin size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] duration-300 bg-[#333333] ">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] opacity-60 lg:opacity-100 hover:opacity-100 duration-300 bg-[#333333] ">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/tolzydrill"
+              href="https://github.com/tolu-og"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] duration-300 bg-[#6fc2b0] ">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] opacity-60 lg:opacity-100 hover:opacity-100 duration-300 bg-[#6fc2b0] ">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="mailto:ogunnusitolulope1@gmail.com"
             >
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] duration-300 bg-[#565f69] ">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] opacity-60 lg:opacity-100 hover:opacity-100 duration-300 bg-[#565f69] ">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href={Resume}
               download="Ogunnusi Tolulope Resume.pdf"
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              Resumé <BsFillPersonLinesFill size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] duration-300 bg-[#20beff] ">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] opacity-60 lg:opacity-100 hover:opacity-100 duration-300 bg-[#20beff] ">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.kaggle.com/tolulope1"
