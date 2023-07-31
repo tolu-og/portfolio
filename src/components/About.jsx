@@ -26,14 +26,6 @@ const About = () => {
             </p>
           </div>
         </div>
-
-        <div className="shadow-lg shadow-pink-600 w-80 h-80 mt-8 rounded-full">
-          <img
-            className="items-center object-cover hover:scale-105 duration-300 rounded-full w-full h-full "
-            src={Profile}
-            alt="Profile"
-          />
-        </div>
       </div>
     </div>
   );
