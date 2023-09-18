@@ -107,7 +107,7 @@ const Portfolio = () => {
               </span>
               <div className="pt-8 text-center">
                 <a
-                  href="https://hulu2-0-clone-five.vercel.app/"
+                  href="hulu-clone.tolulabs.dev"
                   target="_blank"
                   rel="noreferrer"
                 >
