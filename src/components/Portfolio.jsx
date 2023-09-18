@@ -107,7 +107,7 @@ const Portfolio = () => {
               </span>
               <div className="pt-8 text-center">
                 <a
-                  href="hulu-clone.tolulabs.dev"
+                  href="https://hulu-clone.tolulabs.dev/"
                   target="_blank"
                   rel="noreferrer"
                 >
