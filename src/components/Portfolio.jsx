@@ -228,7 +228,7 @@ const Portfolio = () => {
               </span>
               <div className="pt-8 text-center">
                 <a
-                  href="https://twitch-clone-livid.vercel.app/"
+                  href="https://twitch-clone.tolulabs.dev/"
                   target="_blank"
                   rel="noreferrer"
                 >
